@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --text-color: #fff ;
+    --bg-color: #000;
+    --main-color: #ffa343;
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+body {
+    background-size: cover;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/bagan.gif);
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+.logo {
+    font-size: 33px;
+    color: var(--text-color);
+    font-weight: 700px;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .5s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.h-right{
+    display: flex;
+    align-items: center;
+}
+
+.h-right a:first-child{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .5s ease;
+}
+
+.h-right a:hover {
+    color: var(--main-color);
+    transform: translateY(-3px);
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 15px; 
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all .5s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateX(10px);
+    border: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0,0.8),rgba(0,0,50,0,0.8)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #fff;
+    padding: 50px 60px 70px;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: var(--main-color);
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--main-color);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+    color: var(--main-color);
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: var(--main-color);
+    color: var(--text-color);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    height: 280px;
+}
+
+.btn-field button.disable {
+    background: #eaeaea;
+    color: #555;
+}
+
+/* responsive */
+@media (max-width: 1700px) {
+    header {
+        padding: 18px 8%;
+    }
+    header.sticky {
+        padding: 7px 8%;
+    }
+    section{
+        padding: 50px 8% 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 14px 5%;
+    }
+    header.sticky {
+        padding: 7px 5%;
+    }
+    section{
+        padding: 45px 5% 35px;
+    }
+
+    :root {
+        --h1-font: 4.6rem;
+        --h2-font: 2.8rem;
+        --p-font: 15px;
+    }
+    .home{
+        height: 90vh;
+    }
+}
+
+@media (max-width: 1050px) {
+    .feature-content {
+        gap: 1.5rem;
+    }   
+    .holiday{
+        gap: 3rem;
+    }
+    .culture{
+        gap: 3rem;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        transition: all .5s ease;
+    }
+
+    .navbar a{
+        display: block;
+        color: #979797;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .navbar open {
+        left: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .post {
+        grid-template-columns: 1fr;      
+    }
+
+    .culture{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    :root {
+        --h1-font: 3.5rem;
+        --h2-font: 2.1rem;
+    }
+    .home {
+       height: 85vh; 
+    }
+}
+
+@media(max-width: 450px) {
+    header {
+        padding: 1px 3%;
+    }
+    header.sticky {
+        padding: 7px 3%;
+    }
+    section{
+        padding: 45px 3% 50px;
+    }
+}

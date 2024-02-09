@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XBurma</title>
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="output.css" />
+    <!--remixison css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- boxicons link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
+      integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css"">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a href="home.html" class="logo"><span>X</span>Burma</a>
+
+      <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <div class="h-right">
+        <a href="login.html" class="btn">Login</a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <div class="bx bx-menu" id="menu-icon" onclick="menuOpen()">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- /header -->
+
+    <!-- home -->
+    <section class="home">
+      <div class="home-text">
+        <h5>Let's</h5>
+        <h1>
+          Explore <br />
+          Burma
+        </h1>
+        <p>
+          Myanmar, also known as Burma, is a country located in Southeast Asia.
+          <span>Myanmar</span> has a diverse geography that includes mountains,
+          plains and a lengthy coastline.
+        </p>
+        <a href="blog.html" class="btn">Let's Explore <span>Burma</span></a>
+    </section>
+    <!-- /home -->
+
+    <!-- blog section -->
+    <section class="blog">
+      <div class="blog-content">
+        <div class="row">
+          <div class="row-img">
+            <img src="images/INLAY.jpg">
+          </div>
+          <h4>Innlay, where nature meets tradition</h4>
+        </div>
+        <div class="row">
+          <div class="row-img">
+            <img src="images/Mandalay.jpg">
+          </div>
+          <h4>Mandalay, Cultural heart of Burma</h4>
+        </div>
+        <div class="row">
+          <div class="row-img">
+            <img src="images/Downtown-Yangon-Myanmar.jpg">
+          </div>
+          <h4>A snapshot of Yangon</h4>
+        </div>
+        <div class="row">
+          <div class="row-img">
+            <img src="images/myeik.jpg">
+          </div>
+          <h4>Dive into the untouched water of Myeik</h4>
+        </div>
+        <div class="row">
+          <div class="row-img">
+            <img src="images/aya.jpg">
+          </div>
+          <h4>A tour to Ayeyarwaddy Dolphins</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog post section -->
+    <section class="post">
+      <div class="post-img">
+        <img src="images/ayapost.jpg">
+      </div>
+
+      <div class="post-text">
+        <h5>Lorem ipsum</h5>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure eligendi tenetur, minima veniam ullam at earum laborum? Hic nam, tempora dolore quibusdam explicabo consequatur voluptates saepe deserunt exercitationem omnis ea distinctio fuga reprehenderit, mollitia illo. Quibusdam optio quidem cupiditate magnam?</p>
+        <a href="#" class="btn"> Read More </a>
+      </div>
+    </section>
+
+    <!-- popular blogs -->
+    <section class="popular">
+      <div class="center-text">
+        <h2>Popular Blogs</h2>
+      </div>
+
+      <div class="popular-content">
+        <a href="#">
+          <div class="box">
+            <img src="images/ayapost.jpg">
+            <h6>AyeyarWaddy</h6>
+            <h4>A fisherman fishing in Ayeyarwaddy River</h4>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/INLAY.jpg">
+            <h6>Innlay</h6>
+            <h4>Where nature meets tradition</h4>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/Downtown-Yangon-Myanmar.jpg">
+            <h6>Yangon</h6>
+            <h4>A city clear of danger</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="center-btn">
+        <a href="#" class="btn">Read blogs</a>
+      </div>
+    </section>
+
+    <!-- burmese culture -->
+    <section class="culture">
+      <div class="culture-text">
+        <h5>Burmese Culture</h5>
+        <h2>Burmese culture is a mix of many cultures combined as one</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit a eius nam soluta praesentium? Dolor.</p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+
+      <div class="culture-img">
+        <img src="images/culture.jpg">
+      </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <h2>Ready to Explore with us?</h2>
+          <p>Be ready to breathe the fresh air of Burma</p>
+        </div>
+
+        <form action="">
+          <input type="email" placeholder="Enter your eMail..." required>
+          <input type="submit" value="Get Started" class="btn">
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+      <div class="footer-box">
+        <h2>About</h2>
+        <a href="#">Our Story</a>
+        <a href="#">Team</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-box" id="socials">
+        <h2>Socials</h2>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+      </div>
+    </section>
+
+    <!-- copyright -->
+    <div class="copyright">
+      <p>Courtesy of webweb</p>
+    </div>
+
+
+    <!--custom js file link-->
+    <script src="prj.js"></script>
+  </body>
+</html>

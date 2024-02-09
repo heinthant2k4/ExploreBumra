@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xburma Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <!--remixison css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- boxicons link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
+      integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a href="home.html" class="logo"><span>X</span>Burma</a>
+
+      <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <div class="h-right">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <div class="bx bx-menu" id="menu-icon" onclick="menuOpen()">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- /header -->
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Register</h1>
+        <form>
+          <div class="input-group">
+            <div class="input-field" id="field">
+              <i class="ri-user-5-fill"></i>
+              <input type="text" placeholder="Username" id="username" />
+            </div>
+            <div class="input-field">
+              <i class="ri-mail-fill"></i>
+              <input type="email" placeholder="eMail" id="email" />
+            </div>
+            <div class="input-field">
+              <i class="ri-lock-password-fill"></i>
+              <input type="password" placeholder="Password" id="password" />
+            </div>
+            <p>Lost password?<a href="#">Click here</a></p>
+          </div>
+
+          <div class="btn-field">
+            <button type="button" id="signupbtn" onclick="handleCl1ck()">
+              Register
+            </button>
+            <button
+              type="button"
+              id="signinbtn"
+              class="disable"
+              onclick="handleClick()"
+            >
+              Log In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="prj.js"></script>
+</html>
